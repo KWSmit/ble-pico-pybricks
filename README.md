@@ -16,6 +16,8 @@ amounts of information at once.*
 We can do the same on a RPi Pico and thus we can send data to or read data
 from LEGO hubs without connecting to them.
 
+[![Youtube video](images/title_github.jpg)](https://youtu.be/f9W5nRkdg3k?feature=shared "Youtube video")
+
 ## Pico as advertiser
 
 For using Bluetooth BLE on the Pico you import the `bluetooth` module and
