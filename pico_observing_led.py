@@ -9,7 +9,7 @@ Pico setup:
 - Upload file ble_pybricks.py together with this file to your Pico.
 
 LEGO Hub setup:
-- Make shure your LEGO hub is running Pybricks.
+- Make sure your LEGO hub is running Pybricks.
 - Attach motor to port A.
 - Attach a technic beam to the motor to make it easy to turn manualy.
 
@@ -34,7 +34,7 @@ _IRQ_SCAN_DONE = const(6)
 def bt_irq(event, data):
     global receivedNumber, dataReceivedFlag, led_value
     values = []
-    if _IRQ_SCAN_RESULT:
+    if event == _IRQ_SCAN_RESULT:
         # A single scan result.
         addr_type, addr, adv_type, rssi, adv_data = data
         address = bytes(addr)
